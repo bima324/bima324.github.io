@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertama Kali Kenal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <video autoplay muted loop>
+        <source src="livedownloading.com-couple-boy-girl-watching-nebula-stars-stock-footage-video-100-royalty-free-1109565019-shutterstock.mp4" type="video/mp4">
+        Browser Anda tidak mendukung tag video.
+    </video>
+
+    <audio id="background-music" loop>
+        <source src="Clairo - sofia [Tiktok Version].mp3" type="audio/mp3">
+        Browser Anda tidak mendukung tag audio.
+    </audio>
+
+    <div class="game">
+        <div id="content-container" class="content">
+            <!-- Konten dari script.js akan diisi melalui JavaScript -->
+        </div>
+
+        <div id="volume-control">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1" oninput="changeVolume()">
+        </div>
+
+        <div id="playlist-control">
+            <span class="music-title">Now Playing: </span>
+            <span class="music-button" onclick="previousMusic()">⏮</span>
+            <span class="music-button" onclick="toggleAudio()">⏯</span>
+            <span class="music-button" onclick="nextMusic()">⏭</span>
+            <select id="playlist-select" onchange="changeMusic()">
+                <option value="Clairo - sofia [Tiktok Version].mp3">Clairo - sofia [Tiktok Version]</option>
+                <option value="Powfu - death bed (coffee for your head) ft. beabadoobee (Lyrics).mp3">Powfu - death bed (coffee for your head) ft. beabadoobee (Lyrics)</option>
+                <option value="Lana Del Rey - Yes To Heaven Lirik Terjemahan Indonesia.mp3">Lana Del Rey - Yes To Heaven Lirik Terjemahan Indonesia</option>
+                <option value="Lana Del Rey - Summertime Sadness (Lyrics).mp3">Lana Del Rey - Summertime Sadness (Lyrics)</option>
+                <option value="DJ Snake - Middle (Lyrics) ft. Bipolar Sunshine.mp3">DJ Snake - Middle (Lyrics) ft. Bipolar Sunshine</option>
+                <!-- Tambahkan lagu-lagu lainnya disini -->
+            </select>
+        </div>
+
+        <div id="time-control">
+            <label for="time">Waktu Musik (menit):</label>
+            <input type="range" id="time" min="0" max="100" step="1" value="0" oninput="changeTime()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
